@@ -520,6 +520,18 @@ body {
     padding: 2rem 1.4rem;
   }
 }
+.tilt-card {
+  width: 230px;
+  margin: 0 auto;
+  perspective: 800px;
+}
+
+.tilt-image {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.15s ease-out;
+  transform-style: preserve-3d;
+}
 
 /* =========================
    FOOTER (basic, will enhance later)
