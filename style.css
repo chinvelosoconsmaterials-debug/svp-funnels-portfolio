@@ -763,3 +763,97 @@ body {
     padding: 4rem 0;
   }
 }
+/* ==========================
+   REQUEST A FUNNEL
+=========================== */
+.request-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #052e16, #020617);
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.request-copy h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.request-copy p {
+  color: var(--text-soft);
+  margin-bottom: 1.5rem;
+  max-width: 34rem;
+}
+
+.request-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.request-list li {
+  color: var(--text-soft);
+  margin-bottom: 0.5rem;
+}
+
+/* alt CTA */
+.alt-cta {
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent-soft);
+}
+
+.alt-cta:hover {
+  background: var(--accent);
+  color: #020617;
+}
+
+/* FORM CARD */
+.request-form-card {
+  background: #020617;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 2rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+}
+
+.request-form-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.request-note {
+  margin: 0 0 1.5rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* Placeholder style until you embed GHL form */
+.ghl-form-placeholder {
+  border: 1px dashed var(--border-subtle);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .request-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-copy {
+    text-align: left;
+  }
+
+  .request-section {
+    padding: 4.5rem 0;
+  }
+}
