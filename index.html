@@ -523,6 +523,39 @@
   </div>
 </section>
 
+  <!-- ==========================
+     CONTACT / SAY HI
+=========================== -->
+<section id="contact" class="contact-section reveal">
+  <div class="container contact-inner">
+    <div class="contact-text">
+      <h2 class="section-title">Let’s Talk About Your Funnel</h2>
+      <p class="section-subtitle">
+        Whether you need a full funnel build, a redesign, or a system to connect everything together,
+        send me a quick message and I’ll reply with clear next steps.
+      </p>
+
+      <ul class="contact-highlights">
+        <li>✓ Custom funnels built in GoHighLevel, Systeme.io, and Shopify</li>
+        <li>✓ Modern UI + fast, responsive layouts</li>
+        <li>✓ Automation setup and CRM-friendly workflow</li>
+      </ul>
+    </div>
+
+    <div class="contact-card">
+      <h3>Contact Details</h3>
+      <p>Email:</p>
+      <a href="mailto:svpfunnels@svpfunneldesignservices.com" class="contact-link">
+        svpfunnels@svpfunneldesignservices.com
+      </a>
+
+      <p class="contact-note">
+        Feel free to mention which funnel in the portfolio caught your attention.
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- ==========================
      FOOTER
 =========================== -->
@@ -579,6 +612,45 @@
     </div>
   </div>
 </section>
+
+  <!-- ==========================
+     BACK TO TOP BUTTON
+=========================== -->
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script>
+  // Back-to-top visibility
+  const backToTopBtn = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealEls.forEach((el) => observer.observe(el));
+</script>
 
 </body>
 </html>
