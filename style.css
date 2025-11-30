@@ -693,3 +693,73 @@ body {
     width: 150px;
   }
 }
+/* ==========================
+   HOW IT WORKS / PROCESS
+=========================== */
+.process-section {
+  padding: 6rem 0;
+  background: var(--bg);
+}
+
+.process-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.process-card {
+  background: #020617;
+  border: 1px solid var(--border-subtle);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-soft);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+}
+
+.process-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.process-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.process-card p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+/* ==========================
+   FOOTER
+=========================== */
+.footer {
+  padding: 3rem 0;
+  background: #01050f;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-soft);
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive tweaks (if needed) */
+@media (max-width: 768px) {
+  .process-section {
+    padding: 4rem 0;
+  }
+}
