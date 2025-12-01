@@ -971,3 +971,43 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.svp-form-section {
+  padding: 4rem 1.5rem;
+  background: #020617;              /* dark SVP background */
+  color: #e5e7eb;
+}
+
+.svp-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.svp-form-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.svp-form-subtitle {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  max-width: 560px;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.svp-form-frame {
+  background: #020817;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  padding: 0;
+  overflow: hidden;
+  min-height: 1100px;   /* matches data-height="1074" */
+}
+
+/* Make sure the iframe always fills the wrapper */
+.svp-form-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
